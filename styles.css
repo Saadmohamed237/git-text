@@ -1,0 +1,89 @@
+/* Style global */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #EDEDED; /* Couleur de fond neutre */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Conteneur principal */
+.container {
+    background-color: #FFFFFF;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    width: 320px;
+    text-align: center;
+}
+
+/* Titre principal */
+h1 {
+    font-size: 20px;
+    color: #FF0000; /* Rouge pour le titre */
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Champs de saisie */
+.input-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.input-group label {
+    font-size: 14px;
+    color: #128C7E; /* Vert WhatsApp */
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid #128C7E; /* Bordure verte WhatsApp */
+    border-radius: 25px; /* Coins arrondis */
+    font-size: 14px;
+    color: #128C7E; /* Texte vert */
+    background-color: #F0F0F0; /* Fond gris clair */
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+.input-group input:focus {
+    border-color: #25D366; /* Vert clair lorsqu'on clique */
+    background-color: #FFFFFF; /* Fond blanc pour plus de contraste */
+}
+
+/* Bouton de soumission */
+button {
+    width: 100%;
+    padding: 12px;
+    background-color: #128C7E; /* Vert WhatsApp */
+    border: none;
+    border-radius: 25px;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #25D366; /* Vert clair lorsqu'on survole */
+}
+
+/* Lien */
+p a {
+    text-decoration: none;
+    color: red;
+    font-size: 14px;
+}
+
+p a:hover {
+    text-decoration: underline;
+}
